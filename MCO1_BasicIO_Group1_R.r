@@ -76,7 +76,6 @@ record_ex_rate <- function(ex_rate) {
   ex_choice <- as.integer(readline(prompt = "Select Foreign Currency: "))
   rate_input <- as.numeric(readline(prompt = "Exchange Rate: "))
   
-  # Direct assignment without any conditional (if) check
   ex_rate[ex_choice] <- rate_input
   
   cat("\n***\n")

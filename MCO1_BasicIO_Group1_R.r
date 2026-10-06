@@ -1,7 +1,7 @@
 #********************
-#Last names: Roca
-#Language: English
-#Paradigm(s): R
+#Last names: Roca, Gendernalik, Bolanos, Mallari
+#Language: R
+#Paradigm(s): Imperative
 #********************
 
 

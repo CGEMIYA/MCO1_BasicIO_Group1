@@ -39,8 +39,7 @@ void MainMenu(void)
     printf("[6] Show Interest Amount\n");
 
     printf("\nChoice: ");
-    if (scanf("%d", &choice) != 1)
-        return;
+    scanf("%d", &choice);
 
     printf("\n***\n");
     printf("Choice = %d\n\n", choice);
@@ -51,9 +50,9 @@ void RegisterAccount(void)
     char accountName[100];
 
     printf("Register Account Name\n");
+
     printf("Account Name: ");
-    if (scanf(" %99[^\n]", accountName) != 1)
-        return;
+    scanf(" %99[^\n]", accountName);
 
     printf("\n***\n");
     printf("Account Name = %s\n\n", accountName);
@@ -67,15 +66,13 @@ void DepositAmount(void)
     printf("Deposit Amount\n");
 
     printf("Account Name: ");
-    if (scanf(" %99[^\n]", accountName) != 1)
-        return;
+    scanf(" %99[^\n]", accountName);
 
     printf("Current Balance: 1000.00\n");
     printf("Currency: PHP\n");
 
     printf("\nDeposit Amount: ");
-    if (scanf("%lf", &amount) != 1)
-        return;
+    scanf("%lf", &amount);
 
     printf("\n***\n");
     printf("Account Name = %s\n", accountName);
@@ -90,15 +87,13 @@ void WithdrawAmount(void)
     printf("Withdraw Amount\n");
 
     printf("Account Name: ");
-    if (scanf(" %99[^\n]", accountName) != 1)
-        return;
+    scanf(" %99[^\n]", accountName);
 
     printf("Current Balance: 1000.00\n");
     printf("Currency: PHP\n");
 
     printf("\nWithdraw Amount: ");
-    if (scanf("%lf", &amount) != 1)
-        return;
+    scanf("%lf", &amount);
 
     printf("\n***\n");
     printf("Account Name = %s\n", accountName);
@@ -119,41 +114,13 @@ void RecordExchange(void)
     printf("[6] Chinese Yuan Renminbi (CNY)\n");
 
     printf("\nSelect Foreign Currency: ");
-    if (scanf("%d", &currencyChoice) != 1)
-        return;
+    scanf("%d", &currencyChoice);
 
     printf("Exchange Rate: ");
-    if (scanf("%lf", &exchangeRate) != 1)
-        return;
+    scanf("%lf", &exchangeRate);
 
     printf("\n***\n");
     printf("Select Foreign Currency = %d\n", currencyChoice);
-
-    switch (currencyChoice)
-    {
-        case 1:
-            printf("Foreign Currency = Philippine Peso (PHP)\n");
-            break;
-        case 2:
-            printf("Foreign Currency = United States Dollar (USD)\n");
-            break;
-        case 3:
-            printf("Foreign Currency = Japanese Yen (JPY)\n");
-            break;
-        case 4:
-            printf("Foreign Currency = British Pound Sterling (GBP)\n");
-            break;
-        case 5:
-            printf("Foreign Currency = Euro (EUR)\n");
-            break;
-        case 6:
-            printf("Foreign Currency = Chinese Yuan Renminbi (CNY)\n");
-            break;
-        default:
-            printf("Foreign Currency = Invalid choice\n");
-            break;
-    }
-
     printf("Exchange Rate = %.2f\n\n", exchangeRate);
 }
 
@@ -164,8 +131,7 @@ void CurrencyExchange(void)
     printf("Foreign Currency Exchange\n");
 
     printf("Source Amount: ");
-    if (scanf("%lf", &sourceAmount) != 1)
-        return;
+    scanf("%lf", &sourceAmount);
 
     printf("\nExchanged Currency\n");
     printf("[1] Philippine Peso (PHP) = %.2f\n", sourceAmount);

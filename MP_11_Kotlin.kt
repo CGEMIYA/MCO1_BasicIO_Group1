@@ -1,5 +1,3 @@
-import kotlin.math.ceil
-
 /*
 ********************
 Last names: Bolaños, Gendernalik, Mallari, Roca
@@ -7,6 +5,7 @@ Language: Kotlin
 Paradigm(s): Imperative / Procedural
 ********************
 */
+import kotlin.math.ceil
 
 data class Account(
     val name: String,
